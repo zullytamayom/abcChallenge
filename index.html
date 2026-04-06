@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABC Challenge</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h2>ABC Challenge</h2>
+      <p>Letras vistas: <span id="contador">0</span></p>
+    </nav>
+
+    <div class="filtros">
+      <button onclick="filtrar('vocales')">Vocales</button>
+      <button onclick="filtrar('todas')">Todas</button>
+    </div>
+    <div class="galeria"></div>
+
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>A</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="src/abeja.jpg" alt="Aguacate" />
+        <h3>Abeja</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>B</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="src/burro.jpg" alt="Aguacate" />
+        <h3>Burro</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>C</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="src/cangrejo.jpg" alt="Aguacate" />
+        <h3>Cangrejo</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>D</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="src/delfin.jpg" alt="Aguacate" />
+        <h3>Delfin</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>E</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="src/elefante.jpg" alt="Aguacate" />
+        <h3>Elefante</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>F</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="src/foca.jpg" alt="Aguacate" />
+        <h3>Foca</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>G</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="src/gato.jpg" alt="Aguacate" />
+        <h3>Gato</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>H</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="src/hormiga.jpg" alt="Aguacate" />
+        <h3>Hormiga</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>A</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="https://..." alt="Aguacate" />
+        <h3>Aguacate</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>A</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="https://..." alt="Aguacate" />
+        <h3>Aguacate</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>A</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="https://..." alt="Aguacate" />
+        <h3>Aguacate</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>A</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="https://..." alt="Aguacate" />
+        <h3>Aguacate</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>A</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="https://..." alt="Aguacate" />
+        <h3>Aguacate</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>A</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="https://..." alt="Aguacate" />
+        <h3>Aguacate</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>A</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="https://..." alt="Aguacate" />
+        <h3>Aguacate</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>A</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="https://..." alt="Aguacate" />
+        <h3>Aguacate</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>A</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="https://..." alt="Aguacate" />
+        <h3>Aguacate</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>A</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="https://..." alt="Aguacate" />
+        <h3>Aguacate</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>A</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="https://..." alt="Aguacate" />
+        <h3>Aguacate</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>A</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="https://..." alt="Aguacate" />
+        <h3>Aguacate</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>A</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="https://..." alt="Aguacate" />
+        <h3>Aguacate</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>A</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="https://..." alt="Aguacate" />
+        <h3>Aguacate</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>A</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="https://..." alt="Aguacate" />
+        <h3>Aguacate</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>A</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="https://..." alt="Aguacate" />
+        <h3>Aguacate</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>A</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="https://..." alt="Aguacate" />
+        <h3>Aguacate</h3>
+      </div>
+    </div>
+    <div class="card" data-tipo="vocal" onclick="voltear(this)">
+      <div class="card-frente">
+        <h1>A</h1>
+      </div>
+      <div class="card-dorso">
+        <img src="https://..." alt="Aguacate" />
+        <h3>Aguacate</h3>
+      </div>
+    </div>
+    <footer>
+      <h3>Individual</h3>
+      <p>Zully Tamayo M</p>
+    </footer>
+  </body>
+</html>
