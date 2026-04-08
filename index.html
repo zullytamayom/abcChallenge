@@ -1,353 +1,302 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ABC Challenge</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-dark bg-dark px-4">
-      <h2 class="text-white">ABC Challenge</h2>
-      <p class="text-white mb-0">Letras vistas: <span id="contador">0</span></p>
-    </nav>
 
-    <div class="filtros">
-      <button onclick="filtrar('vocales')">Vocales</button>
-      <button onclick="filtrar('todas')">Todas</button>
-    </div>
-    <div class="galeria"></div>
-    <div class="container">
-      <div class="row row-cols-auto g-4" id="galeria">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABC Challenge</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark px-4">
+    <h2 class="text-white">ABC Challenge</h2>
+    <p class="text-white mb-0">Letras vistas: <span id="contador">0</span></p>
+  </nav>
+  <div class="filtros">
+    <button  type="button" class="btn btn-info" onclick="filtrar('vocales')">Vocales</button>
+    <button type="button" class="btn btn-info"  onclick="filtrar('todas')">Todas</button>
+  </div>
+  <div class="container">
+    <div class="row row-cols-auto g-4" id="galeria">
       <div class="col">
-      <div class="card h-100" data-tipo="vocal" onclick="voltear(this)">
-      <div class="card-inner">
-      <div class="card-frente"><h1>A</h1></div>
-      <div class="card-dorso">
-        <img src="src/abeja.jpg" alt="Abeja" class="img-abc" />
+        <div class="card h-100" data-tipo="vocal">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">A</div>
+              <div class="back"><img src="src/abeja.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+         <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">B</div>
+              <div class="back"><img src="src/burro.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
       </div>
-       </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">C</div>
+              <div class="back"><img src="src/cangrejo.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
       </div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>B</h1></div>
-      <div class="card-dorso">
-        <img src="src/burro.jpg" alt="Burro" class="img-abc" />
+      <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">D</div>
+              <div class="back"><img src="src/delfin.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="vocal">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">E</div>
+              <div class="back"><img src="src/elefante.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">F</div>
+              <div class="back"><img src="src/foca.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">G</div>
+              <div class="back"><img src="src/gato.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">H</div>
+              <div class="back"><img src="src/hormiga.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="vocal">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">I</div>
+              <div class="back"><img src="src/iguana.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">J</div>
+              <div class="back"><img src="src/jirafa.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">K</div>
+              <div class="back"><img src="src/koala.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">L</div>
+              <div class="back"><img src="src/leon.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">M</div>
+              <div class="back"><img src="src/mariposa.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">N</div>
+              <div class="back"><img src="src/nutria.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">Ñ</div>
+              <div class="back"><img src="src/ñandu.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="col">
+        <div class="card h-100" data-tipo="vocal">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">O</div>
+              <div class="back"><img src="src/oso.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">P</div>
+              <div class="back"><img src="src/perro.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">Q</div>
+              <div class="back"><img src="src/quetzal.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">R</div>
+              <div class="back"><img src="src/raton.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">S</div>
+              <div class="back"><img src="src/serpiente.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">T</div>
+              <div class="back"><img src="src/tortuga.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="vocal">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">U</div>
+              <div class="back"><img src="src/urraca.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">V</div>
+              <div class="back"><img src="src/vaca.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">W</div>
+              <div class="back"><img src="src/wombat.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">X</div>
+              <div class="back"><img src="src/xoloi.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">Y</div>
+              <div class="back"><img src="src/yegua.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" data-tipo="consonante">
+          <div class="flashcard-container">
+            <div class="flashcard">
+              <div class="front">Z</div>
+              <div class="back"><img src="src/zorro.jpg" class="img-abc" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <footer class="bg-dark text-white text-center py-4 mt-4 w-100">
+        <h3>Individual</h3>
+        <p>Zully Tamayo M</p>
+      </footer>
+      <script src="script.js"></script>
+</body>
 
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>C</h1></div>
-      <div class="card-dorso">
-        <img src="src/cangrejo.jpg" alt="Cangrejo" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>D</h1></div>
-      <div class="card-dorso">
-        <img src="src/delfin.jpg" alt="Delfin" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>E</h1></div>
-      <div class="card-dorso">
-        <img src="src/elefante.jpg" alt="Elefante" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>F</h1></div>
-      <div class="card-dorso">
-        <img src="src/foca.jpg" alt="Foca" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>G</h1></div>
-      <div class="card-dorso">
-        <img src="src/gato.jpg" alt="Gato" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>H</h1></div>
-      <div class="card-dorso">
-        <img src="src/hormiga.jpg" alt="Hormiga" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="vocal" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>I</h1></div>
-      <div class="card-dorso">
-        <img src="src/iguana.jpg" alt="Iguana" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>J</h1></div>
-      <div class="card-dorso">
-        <img src="src/jirafa.jpg" alt="Jirafa" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>K</h1></div>
-      <div class="card-dorso">
-        <img src="src/koala.jpg" alt="Koala" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>L</h1></div>
-      <div class="card-dorso">
-        <img src="src/leon.jpg" alt="Leon" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>M</h1></div>
-      <div class="card-dorso">
-        <img src="src/mariposa.jpg" alt="Mariposa" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>N</h1></div>
-      <div class="card-dorso">
-        <img src="src/nutria.jpg" alt="Nutria" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>ñ</h1></div>
-      <div class="card-dorso">
-        <img src="src/ñandu.jpg" alt="Ñandu" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="vocal" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>O</h1></div>
-      <div class="card-dorso">
-        <img src="src/oso.jpg" alt="Oso" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>P</h1></div>
-      <div class="card-dorso">
-        <img src="src/perro.jpg" alt="Perro" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>Q</h1></div>
-      <div class="card-dorso">
-        <img src="src/quetzal.jpg" alt="Quetzal" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>R</h1></div>
-      <div class="card-dorso">
-        <img src="src/raton.jpg" alt="Raton " class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>S</h1></div>
-      <div class="card-dorso">
-        <img src="src/serpiente.jpg" alt="Serpiente" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>T</h1></div>
-      <div class="card-dorso">
-        <img src="src/tortuga.jpg" alt="Tortuga" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="vocal" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>U</h1></div>
-      <div class="card-dorso">
-        <img src="src/urraca.jpg" alt="Urraca" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>V</h1></div>
-      <div class="card-dorso">
-        <img src="src/vaca.jpg" alt="Vaca" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>W</h1></div>
-      <div class="card-dorso">
-        <img src="src/wombat.jpg" alt="Wombat" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>X</h1></div>
-      <div class="card-dorso">
-        <img src="src/xoloi.jpg" alt="Xoloi" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>Y</h1></div>
-      <div class="card-dorso">
-        <img src="src/yegua.jpg" alt="Yegua" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100" data-tipo="consonante" onclick="voltear(this)">
-    
-    <div class="card-inner">
-      <div class="card-frente"><h1>Z</h1></div>
-      <div class="card-dorso">
-        <img src="src/zorro.jpg" alt="Zorro" class="img-abc" />
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-    <footer class="bg-dark text-white bg-dark px-4 text-center">
-      <h3>Individual</h3>
-      <p>Zully Tamayo M</p>
-    </footer>
-    <script></script>
-  </body>
 </html>
